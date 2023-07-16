@@ -1,5 +1,5 @@
 Thanks for visiting us!
 
 
-Author: swwamikumar.com
+Author: swamikumar.com
 License: https://bootstrapmade.com/license/
