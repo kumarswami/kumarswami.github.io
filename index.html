@@ -766,33 +766,38 @@
           </div>
           <div class="col-md-8 col-xl-9 order-0 order-md-1">
             <h2 class="mb-3 text-5 text-uppercase text-center text-md-start">Send us a note</h2>
-			  <form id="contact-form" action="https://formspree.io/f/mzzybrle" method="post">
-              	<div class="row g-4">
-               	   <div class="col-xl-6">
-                    <input name="name" type="text" class="form-control" required="" placeholder="Name">
-               	    </div>
-                <div class="col-xl-6">
-                    <input name="email" type="email" class="form-control" required="" placeholder="Email">
-                </div>
-		  <div class="col">
-		    <textarea name="form-message" class="form-control" rows="5" required="" placeholder="Message........"></textarea>
-		 </div>
-              </div>  
-   				<!-- 
-			     <div class="col-md-12 text-center">
-	              <div class="loading">Loading</div>
-	                  <div class="error-message"></div>
-	                  <div class="sent-message">Your message has been sent. Thank you!</div>
+            <form id="contact-form" action="https://formspree.io/f/mzzybrle" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
 
-                  <button type="submit" class="btn btn-primary rounded-pill d-inline-flex>Send Message</button>
-				 <button id="submit-btn" class="btn btn-primary rounded-pill d-inline-flex" type="submit">Send Message</button>
+                <div class="col-md-6">
+                 <!--  <label for="name-field" class="pb-2">Your Name</label> -->
+                  <input type="text" name="name" id="name-field" class="form-control" required="" placeholder="Name">
                 </div>
-				   -->
-			
-             	 <p class="text-center mt-4 mb-0">
-				<button type="submit" class="btn btn-primary rounded-pill d-inline-flex">Send Message</button>
-              	</p>
 
+                <div class="col-md-6">
+                 <!--  <label for="email-field" class="pb-2">Your Email</label> -->
+                  <input type="email" class="form-control" name="email" id="email-field" required="" placeholder="Email">
+                </div>
+                <!--
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div> 
+                -->
+                <div class="col-md-12">
+                 <!--  <label for="message-field" class="pb-2">Message</label> -->
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required="" placeholder="Message"></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
             </form>
           </div>
         </div>
